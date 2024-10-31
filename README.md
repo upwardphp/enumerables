@@ -2,6 +2,14 @@
 
 A PHP/Laravel package that enhances Enum usage with various utilities like easy conversion, validation, and additional operations. Designed to streamline working with Enums in Laravel projects, Enumerables optimizes code for clarity and maintainability when handling constants and specific values.
 
+## Installation
+
+To install the `Enumerables` package run the following command in your terminal:
+
+```bash
+composer require upward/enumerables
+```
+
 ## Features
 
 ### Enum Case Attributes with Label
