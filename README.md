@@ -13,7 +13,6 @@ The `Enumerables` package provides a way to add a `Label` attribute to your Enum
 Here's how to use the `Label` attribute with an Enum case and retrieve the text:
 
 ```php
-<?php
 
 use Upward\Enumerables\Attributes\Label;
 use Upward\Enumerables\Traits\HasLabel;
@@ -39,7 +38,6 @@ echo $status->getLabel(); // Outputs: Active
 If you want to display the label without translation, set the `translate` option to false:
 
 ```php
-<?php
 
 use Upward\Enumerables\Attributes\Label;
 use Upward\Enumerables\Traits\HasLabel;
