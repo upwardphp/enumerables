@@ -3,11 +3,11 @@
 namespace Upward\Tests;
 
 use Upward\Enumerables\Attributes\Label;
-use Upward\Enumerables\Traits\HasLabel;
+use Upward\Enumerables\Traits\InteractsWithLabel;
 
 enum LabelEnum
 {
-    use HasLabel;
+    use InteractsWithLabel;
 
     #[Label]
     case First;

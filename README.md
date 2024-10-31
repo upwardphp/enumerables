@@ -23,11 +23,11 @@ Here's how to use the `Label` attribute with an Enum case and retrieve the text:
 ```php
 
 use Upward\Enumerables\Attributes\Label;
-use Upward\Enumerables\Traits\HasLabel;
+use Upward\Enumerables\Traits\InteractsWithLabel;
 
 enum Status
 {
-    use HasLabel;
+    use InteractsWithLabel;
     
     #[Label(text: 'Active')]
     case ACTIVE;
@@ -48,11 +48,11 @@ If you want to display the label without translation, set the `translate` option
 ```php
 
 use Upward\Enumerables\Attributes\Label;
-use Upward\Enumerables\Traits\HasLabel;
+use Upward\Enumerables\Traits\InteractsWithLabel;
 
 enum UserRole
 {
-    use HasLabel;
+    use InteractsWithLabel;
 
     #[Label(text: 'Administrator', translate: false)]
     case ADMIN;

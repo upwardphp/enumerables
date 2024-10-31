@@ -2,14 +2,10 @@
 
 namespace Upward\Enumerables\Traits;
 
-use Upward\Enumerables\Exceptions\MissingLabelAttributeException;
 use Upward\Enumerables\Resolvers\LabelResolver;
 
-trait HasLabel
+trait InteractsWithLabel
 {
-    /**
-     * @throws MissingLabelAttributeException
-     */
     public function getLabel(): string
     {
         return LabelResolver::shouldReturnText(
